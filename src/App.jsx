@@ -85,33 +85,7 @@ export default function App() {
 						<span>LEVEL 01 / UNKNOWN LOCATION</span>
 					</div>
 
-					<Map
-						map={map}
-						revealed={revealed}
-						scanActive={scanActive}
-						routeVisible={routeVisible}
-						onDoorClick={toggleDoor}
-						onCreatureClick={setSelectedCreature}
-						onMove={movePlayer}
-					/>
-
-					<div className='map-legend'>
-						<span>
-							<i className='legend-player' /> YOU
-						</span>
-						<span>
-							<i className='legend-route' /> ROUTE
-						</span>
-						<span>
-							<i className='legend-door' /> DOOR
-						</span>
-						<span>
-							<i className='legend-danger' /> THREAT
-						</span>
-					</div>
-				</div>
-
-				<aside className='sidebar'>
+					{/* <aside className='sidebar'> */}
 					<StatusPanel
 						revealed={revealed}
 						selectedCreature={selectedCreature}
@@ -127,22 +101,48 @@ export default function App() {
 						routeVisible={routeVisible}
 					/>
 
-					<div className='warning-panel'>
+					{/* <div className='warning-panel'>
 						<div className='warning-title'>⚠ SECURITY ADVISORY</div>
 						<p>
 							{revealed.length
 								? 'UNKNOWN BIOLOGICAL SIGNATURES DETECTED. MAINTAIN SAFE DISTANCE.'
 								: 'NO ACTIVE THREATS CONFIRMED. SCAN THE ENVIRONMENT.'}
 						</p>
-					</div>
-				</aside>
+					</div> */}
+					{/* </aside> */}
+
+					<Map
+						map={map}
+						revealed={revealed}
+						scanActive={scanActive}
+						routeVisible={routeVisible}
+						onDoorClick={toggleDoor}
+						onCreatureClick={setSelectedCreature}
+						onMove={movePlayer}
+					/>
+
+					{/* <div className='map-legend'>
+						<span>
+							<i className='legend-player' /> YOU
+						</span>
+						<span>
+							<i className='legend-route' /> ROUTE
+						</span>
+						<span>
+							<i className='legend-door' /> DOOR
+						</span>
+						<span>
+							<i className='legend-danger' /> THREAT
+						</span>
+					</div> */}
+				</div>
 			</section>
 
-			<footer className='bottom-bar'>
+			{/* <footer className='bottom-bar'>
 				<span>NEXUS CORPORATION © 2089</span>
 				<span>ALL SYSTEMS OPERATIONAL</span>
 				<span>PROTOTYPE v0.1.0</span>
-			</footer>
+			</footer> */}
 		</main>
 	);
 }

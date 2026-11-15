@@ -5,6 +5,8 @@ export const initialMap = {
 		{ id: 'C', name: 'STORAGE', x: 50, y: 310, w: 180, h: 130 },
 		{ id: 'D', name: 'SECTOR 04', x: 340, y: 310, w: 190, h: 130 },
 		{ id: 'E', name: 'EXIT', x: 650, y: 185, w: 150, h: 110 },
+
+		{ id: 'X', name: '!!!xx', x: 280, y: 550, w: 150, h: 110 },
 	],
 
 	corridors: [
@@ -16,6 +18,10 @@ export const initialMap = {
 		{ x1: 725, y1: 295, x2: 725, y2: 375 },
 		{ x1: 530, y1: 125, x2: 725, y2: 125 },
 		{ x1: 725, y1: 125, x2: 725, y2: 185 },
+
+		{ x1: 135, y1: 425, x2: 135, y2: 625 },
+		{ x1: 125, y1: 625, x2: 925, y2: 625 },
+		{ x1: 725, y1: 625, x2: 725, y2: 350 },
 	],
 
 	doors: [
@@ -23,6 +29,8 @@ export const initialMap = {
 		{ id: 'D-02', x: 435, y: 250, state: 'closed' },
 		{ id: 'D-03', x: 285, y: 375, state: 'closed' },
 		{ id: 'D-04', x: 625, y: 375, state: 'locked' },
+
+		{ id: 'D-05', x: 225, y: 625, state: 'locked' },
 	],
 
 	creatures: [

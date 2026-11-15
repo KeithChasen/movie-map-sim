@@ -18,7 +18,7 @@ export default function Map({
 
 	return (
 		<div className='map-container'>
-			<svg viewBox='0 0 900 520' className='map-svg' onClick={handleMapClick}>
+			<svg viewBox='0 0 900 920' className='map-svg' onClick={handleMapClick}>
 				<defs>
 					<pattern
 						id='grid'
@@ -43,8 +43,8 @@ export default function Map({
 					</filter>
 				</defs>
 
-				<rect width='900' height='520' fill='#050b0b' />
-				<rect width='900' height='520' fill='url(#grid)' />
+				<rect width='900' height='920' fill='#050b0b' />
+				<rect width='900' height='720' fill='url(#grid)' />
 
 				{/* Corridors */}
 				{map.corridors.map((corridor, index) => (

@@ -99,7 +99,7 @@ button {
 .panel-heading {
 	display: flex;
 	justify-content: space-between;
-	padding: 14px;
+	padding: 4px;
 	border-bottom: 1px solid #27664f;
 	font-size: 11px;
 	letter-spacing: 1px;
@@ -291,7 +291,7 @@ button {
 }
 
 .controls button {
-	padding: 15px;
+	padding: 8px;
 	text-align: left;
 	background: #0a1a13;
 	border: 1px solid #398664;
